@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riast Dwi Sanditya | Biodata & Portofolio</title>
+  <meta name="description" content="Portofolio Riast Dwi Sanditya (Yast), mahasiswa Informatika Universitas Pancasila: biodata, hasil potret, dan proyek web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&family=Space+Grotesk:wght@500..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/solid/rounded.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/brands/all.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- bar progres scroll -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- garis warna palet -->
+  <div class="palette-strip" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- HEADER & NAVIGASI -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#beranda" class="logo">Yast</a>
+
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav class="nav" id="menu">
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#perjalanan">Perjalanan</a>
+        <a href="#foto">Foto</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BERANDA (HERO) -->
+    <section id="beranda" class="hero">
+      <!-- bola warna melayang (hiasan) -->
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="label">Halo <span class="wave" aria-hidden="true"><i class="fi fi-sr-hand-wave"></i></span> saya</p>
+          <h1>Riast Dwi Sanditya</h1>
+
+          <!-- teks mengetik otomatis -->
+          <p class="typing">Saya <span class="typing-text" id="typing-text">suka Indomie Ayam Geprek</span><span class="cursor" aria-hidden="true">|</span></p>
+
+          <p class="lead">Mahasiswa Teknik Informatika yang suka main dan memotret. Di sini saya pamerkan hasil potret dan proyek yang sudah saya deploy.</p>
+
+          <!-- lencana ringkas -->
+          <ul class="hero-badges">
+            <li><i class="fi fi-sr-graduation-cap" aria-hidden="true"></i> Informatika, Universitas Pancasila</li>
+            <li><i class="fi fi-sr-chalkboard-user" aria-hidden="true"></i> Asisten praktikum PBO</li>
+            <li><i class="fi fi-sr-camera" aria-hidden="true"></i> Fotografi</li>
+          </ul>
+
+          <div class="buttons">
+            <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#foto" class="btn btn-outline">Lihat Foto</a>
+          </div>
+        </div>
+
+        <!-- foto profil -->
+        <div class="avatar-wrap">
+          <div class="avatar" data-label="Foto profil">
+            <img src="images/profil.jpeg" alt="Foto profil Yast">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section-soft">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <div class="about-grid">
+          <div>
+            <p>Halo, saya Riast, mahasiswa Informatika di Universitas Pancasila. Saya suka membangun hal-hal yang bisa langsung dipakai, mulai dari website sederhana sampai sistem yang punya database dan beberapa peran pengguna.</p>
+            <p>Di kampus saya belajar rekayasa perangkat lunak, desain web, sistem informasi geografis, analisis dan desain berorientasi objek, serta etika profesi. Saya juga asisten praktikum Pemrograman Berorientasi Objek dan Desain Web.</p>
+            <p>Di luar kode, saya memotret. Keduanya saling melengkapi: ngoding melatih saya berpikir runtut, memotret melatih saya memperhatikan detail.</p>
+          </div>
+
+          <ul class="bio-list">
+            <li><strong>Nama</strong> Riast Dwi Sanditya</li>
+            <li><strong>Studi</strong> Informatika, Universitas Pancasila</li>
+            <li><strong>Kegiatan</strong> Asisten praktikum PBO (Java) &amp; Desain Web (HTML, CSS, JS), mengikuti Celerates Acceleration Mastery Program, dan berkuliah</li>
+            <li><strong>Fokus</strong> Web Dev (UI/UX), Database, Learning New Things</li>
+            <li><strong>Hobi</strong> Fotografi dan Game</li>
+            <li><strong>Lokasi</strong> Indonesia</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian" class="section-medium">
+      <div class="container">
+        <h2>Keahlian</h2>
+        <p class="section-desc">Hal-hal yang biasa saya kerjakan dan alat yang saya pakai.</p>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fi fi-sr-code-simple" aria-hidden="true"></i></div>
+            <h3>Web &amp; Frontend</h3>
+            <p>Membuat halaman web yang rapi dan responsif, dari struktur sampai interaksi.</p>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fi fi-sr-database" aria-hidden="true"></i></div>
+            <h3>Backend &amp; Basis Data</h3>
+            <p>Merancang database lalu menghubungkannya ke aplikasi web.</p>
+            <ul class="chips">
+              <li>PHP</li><li>MySQL</li><li>SQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fi fi-sr-laptop-code" aria-hidden="true"></i></div>
+            <h3>Pemrograman &amp; Rekayasa</h3>
+            <p>Berpikir berorientasi objek dan merancang sistem sebelum menulis kode.</p>
+            <ul class="chips">
+              <li>Java</li><li>OOP</li><li>Python</li><li>Git &amp; GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fi fi-sr-camera" aria-hidden="true"></i></div>
+            <h3>Fotografi &amp; Dokumentasi</h3>
+            <p>Memotret, menyunting foto, dan menyusun dokumen kegiatan yang rapi.</p>
+            <ul class="chips">
+              <li>Fotografi</li><li>Editing foto</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- topik yang sedang dipelajari -->
+        <div class="learning">
+          <p class="learning-title"><i class="fi fi-sr-bulb" aria-hidden="true"></i> Sedang saya pelajari</p>
+          <ul class="chips">
+            <li>Web Development UI/UX di Celerates Acceleration Mastery Program</li><li>Street Photography</li><li>Belajar Masak</li><li>Belajar Asisten</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERJALANAN -->
+    <section id="perjalanan" class="section-soft">
+      <div class="container">
+        <h2>Perjalanan</h2>
+        <p class="section-desc">Cerita singkat perjalanan saya sejauh ini.</p>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-label">Awal</span>
+            <h3>Lahir dan besar di Samarinda</h3>
+            <p>Samarinda, Kalimantan Timur, adalah kota tempat saya tumbuh dan memulai semuanya.</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-label">Sekolah</span>
+            <h3>Lulusan SMK Negeri 7 Samarinda</h3>
+            <p>Menempuh pendidikan menengah kejuruan sebelum melanjutkan ke perguruan tinggi.</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-label">Kuliah</span>
+            <h3>Berkuliah di Universitas Pancasila</h3>
+            <p>Melanjutkan studi di jurusan Informatika: rekayasa perangkat lunak, desain web, sistem informasi geografis, analisis dan desain berorientasi objek, serta etika profesi.</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-label">Adaptasi</span>
+            <h3>Beradaptasi dengan Jakarta</h3>
+            <p>Belajar menyesuaikan diri dengan ritme kota yang baru, lingkungan baru, dan kehidupan kampus.</p>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-label">Sekarang</span>
+            <h3>Menjadi asisten praktikum</h3>
+            <p>Membantu mahasiswa belajar di praktikum Pemrograman Berorientasi Objek (Java) dan Desain Web (HTML, CSS, JS).</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FOTO -->
+    <section id="foto">
+      <div class="container">
+        <h2>Hasil Potret</h2>
+        <p class="section-desc">Kumpulan hasil potret saya. Klik foto untuk melihatnya lebih besar.</p>
+
+        <div class="gallery">
+          <figure>
+            <div class="photo" data-label="Foto 1">
+              <img src="images/foto-1.jpg" alt="Deskripsi foto 1" loading="lazy">
+            </div>
+            <figcaption><strong>Pemateri</strong> <span>Universitas Pancasila · Tahun 2026</span></figcaption>
+          </figure>
+
+          <figure>
+            <div class="photo" data-label="Foto 2">
+              <img src="images/foto-2.jpg" alt="Deskripsi foto 2" loading="lazy">
+            </div>
+            <figcaption><strong>MC</strong> <span>Universitas Pancasila · Tahun 2026</span></figcaption>
+          </figure>
+
+          <figure>
+            <div class="photo" data-label="Foto 3">
+              <img src="images/foto-3.jpg" alt="Deskripsi foto 3" loading="lazy">
+            </div>
+            <figcaption><strong>Subuh yang sunyi</strong> <span>Tenggarong · Tahun 2023</span></figcaption>
+          </figure>
+
+          <figure>
+            <div class="photo" data-label="Foto 4">
+              <img src="images/foto-4.jpg" alt="Deskripsi foto 4" loading="lazy">
+            </div>
+            <figcaption><strong>Kereta lelah</strong> <span>Kalibata · Tahun 2024</span></figcaption>
+          </figure>
+
+          <figure>
+            <div class="photo" data-label="Foto 5">
+              <img src="images/foto-5.jpg" alt="Deskripsi foto 5" loading="lazy">
+            </div>
+            <figcaption><strong>Selamat datang 25</strong> <span>Universitas Pancasila · Tahun 2025</span></figcaption>
+          </figure>
+
+          <figure>
+            <div class="photo" data-label="Foto 6">
+              <img src="images/foto-6.jpg" alt="Deskripsi foto 6" loading="lazy">
+            </div>
+            <figcaption><strong>?????</strong> <span>Jembatan Karet · Tahun 2026</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek" class="section-medium">
+      <div class="container">
+        <h2>Proyek Coding</h2>
+        <p class="section-desc">Proyek yang pernah saya bangun. Klik "Lihat Demo" untuk mencobanya langsung.</p>
+
+        <div class="projects">
+          <article class="card">
+            <div class="card-thumb" data-label="Thumbnail 1">
+              <img src="images/proyek-1.png" alt="Tampilan proyek Cerita Coffee" loading="lazy">
+            </div>
+            <p class="card-meta">Aplikasi web · PHP &amp; MySQL</p>
+            <h3>Cerita Coffee</h3>
+            <p>Sistem pemesanan kafe berbasis QR: pelanggan memindai kode di meja untuk melihat menu dan memesan, dengan data tersimpan di database MySQL.</p>
+            <div class="demo-login">
+              <p class="demo-login-title">Akun demo</p>
+              <ul>
+                <li><strong>Karyawan</strong> karyawan1 / karyawan123</li>
+                <li><strong>Admin</strong> admin / admin123</li>
+              </ul>
+            </div>
+            <ul class="features">
+              <li>Pemesanan lewat QR code</li>
+              <li>Database MySQL</li>
+              <li>Sudah dideploy di InfinityFree</li>
+            </ul>
+            <ul class="tags">
+              <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://ceritacoffetebet.infinityfree.me/login.php" target="_blank" rel="noopener">Lihat Demo Admin / Karyawan →</a>
+              <a href="https://ceritacoffetebet.infinityfree.me/pelanggan/index.php?meja=1" target="_blank" rel="noopener">Lihat Demo Meja 1 →</a>
+              <a href="https://github.com/YastAltKiri/Tugas-RPL-Pemesanan-Menu-dengan-QR" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-thumb" data-label="Thumbnail 2">
+              <img src="images/proyek-2.png" alt="Tampilan Website Company Profile" loading="lazy">
+            </div>
+            <p class="card-meta">Website · HTML &amp; CSS</p>
+            <h3>Website Company Profile</h3>
+            <p>Website profil perusahaan yang memperkenalkan bisnis dan layanannya dalam tampilan yang bersih dan mudah dibaca.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://tugasakhir-dw-smt3.netlify.app/" target="_blank" rel="noopener">Lihat Demo →</a>
+              <a href="https://github.com/YastAltKiri/DWSmt3Projek" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-thumb" data-label="Thumbnail 3">
+              <img src="images/proyek-3.png" alt="Tampilan proyek peta SMA Jakarta Selatan" loading="lazy">
+            </div>
+            <p class="card-meta">Pemetaan geografis · HTML</p>
+            <h3>Peta SMA Jakarta Selatan</h3>
+            <p>Proyek pemetaan sekolah menengah atas di Jakarta Selatan yang menampilkan sebaran lokasinya pada peta.</p>
+            <ul class="tags">
+              <li>HTML</li><li>SIG</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://tgs-sig.netlify.app/" target="_blank" rel="noopener">Lihat Demo →</a>
+              <a href="https://github.com/YastAltKiri/TGS-SIG" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-thumb" data-label="Thumbnail 4">
+              <img src="images/proyek-4.png" alt="Tampilan Website iseng Valentine" loading="lazy">
+            </div>
+            <p class="card-meta">Website · HTML, CSS &amp; JS</p>
+            <h3>Website iseng Valentine</h3>
+            <p>Pertama kali mencoba vibecoding.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://nyobawordle.netlify.app" target="_blank" rel="noopener">Lihat Demo →</a>
+              <a href="https://github.com/YastMaou/Valentine2026" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section-soft">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p class="section-desc">Punya ide proyek, ingin berdiskusi soal pemrograman, atau sekadar menyapa? Hubungi saya lewat salah satu kanal di bawah.</p>
+
+        <ul class="contact-list">
+          <li><a href="mailto:riastdwisanditya@gmail.com"><i class="fi fi-sr-envelope" aria-hidden="true"></i> RiastDwiSanditya@gmail.com</a></li>
+          <li><a href="https://github.com/YastAltKiri" target="_blank" rel="noopener"><i class="fi fi-brands-github" aria-hidden="true"></i> GitHub</a></li>
+          <li><a href="https://instagram.com/Riast__" target="_blank" rel="noopener"><i class="fi fi-brands-instagram" aria-hidden="true"></i> Instagram</a></li>
+        </ul>
+
+        <div class="topic-line">
+          <p>Bisa diajak ngobrol soal:</p>
+          <ul class="chips">
+            <li>Game</li><li>Film</li><li>Mie &amp; Gadget</li><li>Fotografi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="tahun"></span>, Riast Dwi Sanditya from Universitas Pancasila</p>
+      <p class="credit">Ikon oleh <a href="https://www.flaticon.com/uicons" target="_blank" rel="noopener">Flaticon Uicons</a></p>
+    </div>
+  </footer>
+
+  <!-- jendela foto melayang (diatur script.js) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto" aria-hidden="true">
+    <div class="lightbox-window">
+      <figure class="lightbox-content">
+        <img id="lightbox-img" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <!-- tombol melayang di bawah gambar -->
+      <button class="lightbox-close" id="lightbox-close" type="button">✕ Tutup</button>
+    </div>
+  </div>
+
+  <!-- tombol kembali ke atas -->
+  <a href="#beranda" class="to-top" id="to-top" aria-label="Kembali ke atas">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
